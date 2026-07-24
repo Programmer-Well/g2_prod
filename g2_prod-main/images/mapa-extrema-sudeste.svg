@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="map-title map-description">
+  <title id="map-title">Localização da G2E em Extrema, Minas Gerais</title>
+  <desc id="map-description">Mapa regional simplificado mostrando Minas Gerais, São Paulo e Rio de Janeiro, com Extrema destacada e conexões visuais com Belo Horizonte, São Paulo e Rio de Janeiro.</desc>
+
+  <defs>
+    <linearGradient id="map-background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#e7f0fa"/>
+    </linearGradient>
+    <linearGradient id="minas-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcecff"/>
+      <stop offset="1" stop-color="#c7def7"/>
+    </linearGradient>
+    <linearGradient id="sao-paulo-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3f8"/>
+      <stop offset="1" stop-color="#dfe8f1"/>
+    </linearGradient>
+    <linearGradient id="rio-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe5e9"/>
+      <stop offset="1" stop-color="#ffd3da"/>
+    </linearGradient>
+    <pattern id="dot-pattern" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#0d4b83" opacity="0.07"/>
+    </pattern>
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#08366d" flood-opacity="0.18"/>
+    </filter>
+    <filter id="pin-shadow" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7c1020" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" rx="42" fill="url(#map-background)"/>
+  <rect width="1200" height="720" rx="42" fill="url(#dot-pattern)"/>
+
+  <g filter="url(#soft-shadow)" stroke="#8aa7c3" stroke-width="5" stroke-linejoin="round">
+    <path
+      d="M300 120 410 80 525 105 620 70 710 115 815 85 900 135 935 220 875 265 910 335 825 390 730 370 660 420 560 395 505 440 420 410 335 430 290 360 315 285 265 225Z"
+      fill="url(#minas-fill)"
+    />
+    <path
+      d="M155 505 245 455 335 430 420 410 505 440 560 395 660 420 730 370 815 415 770 485 690 510 620 560 505 585 430 630 315 620 235 575Z"
+      fill="url(#sao-paulo-fill)"
+    />
+    <path
+      d="M770 485 815 415 880 410 940 445 1025 470 985 525 900 540 840 525Z"
+      fill="url(#rio-fill)"
+    />
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#08366d">
+    <text x="610" y="180" font-size="42" font-weight="800" letter-spacing="2">MINAS GERAIS</text>
+    <text x="450" y="525" font-size="35" font-weight="800" letter-spacing="2">SÃO PAULO</text>
+    <text x="890" y="475" font-size="28" font-weight="800" letter-spacing="1">RIO DE JANEIRO</text>
+  </g>
+
+  <g fill="none" stroke="#f12d46" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 13" opacity="0.72">
+    <path d="M540 408 Q605 325 690 255"/>
+    <path d="M540 408 Q510 485 448 558"/>
+    <path d="M540 408 Q700 420 890 505"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(690 255)">
+      <circle r="13" fill="#ffffff" stroke="#08366d" stroke-width="5"/>
+      <text x="0" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#08366d">Belo Horizonte</text>
+    </g>
+    <g transform="translate(448 558)">
+      <circle r="13" fill="#ffffff" stroke="#08366d" stroke-width="5"/>
+      <text x="0" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#08366d">São Paulo</text>
+    </g>
+    <g transform="translate(890 505)">
+      <circle r="13" fill="#ffffff" stroke="#08366d" stroke-width="5"/>
+      <text x="0" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#08366d">Rio de Janeiro</text>
+    </g>
+  </g>
+
+  <g transform="translate(540 408)" filter="url(#pin-shadow)">
+    <circle r="38" fill="#ffffff" opacity="0.92"/>
+    <path d="M0-44C-25-44-44-25-44 0c0 33 44 73 44 73S44 33 44 0C44-25 25-44 0-44Z" fill="#f12d46"/>
+    <circle cy="0" r="15" fill="#ffffff"/>
+  </g>
+
+  <g transform="translate(585 318)" filter="url(#soft-shadow)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="235" height="64" rx="32" fill="#08366d"/>
+    <text x="117.5" y="41" text-anchor="middle" font-size="25" font-weight="800" fill="#ffffff" letter-spacing="1">EXTREMA · MG</text>
+  </g>
+
+  <text x="1145" y="678" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#66809a" letter-spacing="1">MAPA ILUSTRATIVO · SEM ESCALA</text>
+</svg>
